@@ -64,10 +64,10 @@ C:\Users\Konstantin\source\repos\Lab4\bin\Debug\net8.0-windows\Lab4.runtimeconfi
 C:\Users\Konstantin\source\repos\Lab4\bin\Debug\net8.0-windows\Lab4.dll
 C:\Users\Konstantin\source\repos\Lab4\bin\Debug\net8.0-windows\Lab4.pdb
 C:\Users\Konstantin\source\repos\Lab4\bin\Debug\net8.0-windows\ClassLibrary1.dll
-C:\Users\Konstantin\source\repos\Lab4\bin\Debug\net8.0-windows\WindowsFormsControlLibrary1.dll
 C:\Users\Konstantin\source\repos\Lab4\bin\Debug\net8.0-windows\ClassLibrary1.pdb
-C:\Users\Konstantin\source\repos\Lab4\bin\Debug\net8.0-windows\WindowsFormsControlLibrary1.pdb
 C:\Users\Konstantin\source\repos\Lab4\obj\Debug\net8.0-windows\Lab4.csproj.Up2Date
 C:\Users\Konstantin\source\repos\Lab4\obj\Debug\net8.0-windows\Lab4.genruntimeconfig.cache
 C:\Users\Konstantin\source\repos\Lab4\obj\Debug\net8.0-windows\ref\Lab4.dll
 C:\Users\Konstantin\source\repos\Lab4\obj\Debug\net8.0-windows\Lab4.sourcelink.json
+C:\Users\Konstantin\source\repos\Lab4\bin\Debug\net8.0-windows\WinFormsControlLibrary2.dll
+C:\Users\Konstantin\source\repos\Lab4\bin\Debug\net8.0-windows\WinFormsControlLibrary2.pdb

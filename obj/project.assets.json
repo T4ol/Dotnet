@@ -12,14 +12,21 @@
           "bin/placeholder/ClassLibrary1.dll": {}
         }
       },
-      "WindowsFormsControlLibrary1/1.0.0": {
+      "WinFormsControlLibrary2/1.0.0": {
         "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "ClassLibrary1": "1.0.0"
+        },
         "compile": {
-          "bin/placeholder/WindowsFormsControlLibrary1.dll": {}
+          "bin/placeholder/WinFormsControlLibrary2.dll": {}
         },
         "runtime": {
-          "bin/placeholder/WindowsFormsControlLibrary1.dll": {}
-        }
+          "bin/placeholder/WinFormsControlLibrary2.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
       }
     }
   },
@@ -29,16 +36,16 @@
       "path": "../ClassLibrary1/ClassLibrary1/ClassLibrary1.csproj",
       "msbuildProject": "../ClassLibrary1/ClassLibrary1/ClassLibrary1.csproj"
     },
-    "WindowsFormsControlLibrary1/1.0.0": {
+    "WinFormsControlLibrary2/1.0.0": {
       "type": "project",
-      "path": "../WindowsFormsControlLibrary1/WindowsFormsControlLibrary1/WindowsFormsControlLibrary1.csproj",
-      "msbuildProject": "../WindowsFormsControlLibrary1/WindowsFormsControlLibrary1/WindowsFormsControlLibrary1.csproj"
+      "path": "../WinFormsControlLibrary2/WinFormsControlLibrary2.csproj",
+      "msbuildProject": "../WinFormsControlLibrary2/WinFormsControlLibrary2.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
       "ClassLibrary1 >= 1.0.0",
-      "WindowsFormsControlLibrary1 >= 1.0.0"
+      "WinFormsControlLibrary2 >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -76,8 +83,8 @@
             "C:\\Users\\Konstantin\\source\\repos\\ClassLibrary1\\ClassLibrary1\\ClassLibrary1.csproj": {
               "projectPath": "C:\\Users\\Konstantin\\source\\repos\\ClassLibrary1\\ClassLibrary1\\ClassLibrary1.csproj"
             },
-            "C:\\Users\\Konstantin\\source\\repos\\WindowsFormsControlLibrary1\\WindowsFormsControlLibrary1\\WindowsFormsControlLibrary1.csproj": {
-              "projectPath": "C:\\Users\\Konstantin\\source\\repos\\WindowsFormsControlLibrary1\\WindowsFormsControlLibrary1\\WindowsFormsControlLibrary1.csproj"
+            "C:\\Users\\Konstantin\\source\\repos\\WinFormsControlLibrary2\\WinFormsControlLibrary2.csproj": {
+              "projectPath": "C:\\Users\\Konstantin\\source\\repos\\WinFormsControlLibrary2\\WinFormsControlLibrary2.csproj"
             }
           }
         }

@@ -1,4 +1,5 @@
 using ClassLibrary1;
+using WinFormsControlLibrary2;
 
 namespace Lab4
 {
@@ -7,7 +8,6 @@ namespace Lab4
         private Department dep_;
         private TypesExpenses typ_exp_;
         private Expenses exp_;
-
 
         private void updateViewDepartment()
         {
@@ -21,6 +21,7 @@ namespace Lab4
                 DepartmentView.Items.Add(dep);
             }
         }
+
         private void updateViewTypesExpenses()
         {
             TypesExpensesView.Items.Clear();
@@ -32,31 +33,23 @@ namespace Lab4
                 typexp.SubItems.Add(item.Value.Descripsion);
                 typexp.SubItems.Add($"{item.Value.Normal}");
                 TypesExpensesView.Items.Add(typexp);
-
             }
         }
+
         private void updateViewExpenses()
         {
-            ExpensesView.Items.Clear();
-
+            // Очищаем контейнер и добавляем пользовательские элементы управления
+            tabPage3.Controls.Clear();
+            
             foreach (var expense in DepartmentBD.Instance.Expenses)
             {
-                ListViewItem listItem = new ListViewItem($"{expense.Id}");
-                listItem.Tag = expense;
-
-                string departmentName = expense.Department?.NameDepartment ?? "Не указан";
-                listItem.SubItems.Add(departmentName);
-
-                string typeName = expense.TypesExpenses?.NameExpenses ?? "Не указан";
-                listItem.SubItems.Add(typeName);
-
-                listItem.SubItems.Add($"{expense.Sum}");
-                listItem.SubItems.Add($"{expense.Date:dd.MM.yyyy}");
-
-                ExpensesView.Items.Add(listItem);
+                LibraryElement userControl = new LibraryElement(expense)
+                {
+                    Dock = DockStyle.Top
+                };
+                tabPage3.Controls.Add(userControl);
             }
         }
-
 
         public Main_menu()
         {
@@ -68,35 +61,21 @@ namespace Lab4
         {
             DepartmentView.KeyDown += HandleDeleteKey;
             TypesExpensesView.KeyDown += HandleDeleteKey;
-            ExpensesView.KeyDown += HandleDeleteKey;
             this.KeyPreview = true;
             this.KeyDown += HandleDeleteKey;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            updateViewDepartment();
+            updateViewTypesExpenses();
+            updateViewExpenses();
         }
 
-        private void CreateToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void RuductToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void typexpToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void expToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
+        private void CreateToolStripMenuItem_Click(object sender, EventArgs e) { }
+        private void RuductToolStripMenuItem_Click(object sender, EventArgs e) { }
+        private void typexpToolStripMenuItem_Click(object sender, EventArgs e) { }
+        private void expToolStripMenuItem_Click(object sender, EventArgs e) { }
 
         private void createToolStripMenuItem1_Click(object sender, EventArgs e)
         {
@@ -128,11 +107,9 @@ namespace Lab4
                 return;
             }
 
-
             var selectedItem = TypesExpensesView.SelectedItems[0];
             if (selectedItem.Tag is TypesExpenses selectedTypesExpenses)
             {
-
                 TypesExpensesCreate form = new TypesExpensesCreate(selectedTypesExpenses);
                 DialogResult result;
 
@@ -144,7 +121,6 @@ namespace Lab4
 
                 if (result == DialogResult.OK)
                 {
-
                     updateViewTypesExpenses();
                     MessageBox.Show("Тип расходов успешно обновлен");
                 }
@@ -175,30 +151,34 @@ namespace Lab4
 
         private void reductToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            if (ExpensesView.SelectedItems.Count == 0)
+            try
             {
-                MessageBox.Show("Выберите расход для редактирования");
-                return;
+                bool found = false;
+                foreach (Control control in tabPage3.Controls)
+                {
+                    if (control is LibraryElement userControl && userControl.Selected)
+                    {
+                        var expense = userControl.Expense;
+                        ExpensesCreate form = new ExpensesCreate(expense);
+                        
+                        if (form.ShowDialog() == DialogResult.OK)
+                        {
+                            userControl.UpdateDisplay();
+                            found = true;
+                        }
+                        break;
+                    }
+                }
+
+                if (!found)
+                {
+                    MessageBox.Show("Выберите расход для редактирования");
+                }
             }
-
-
-            var selectedItem = ExpensesView.SelectedItems[0];
-            if (selectedItem.Tag is Expenses selectedExpenses)
+            catch (Exception ex)
             {
-                ExpensesCreate form = new ExpensesCreate(selectedExpenses);
-                DialogResult result;
-
-                do
-                {
-                    result = form.ShowDialog();
-                }
-                while (result == DialogResult.TryAgain);
-
-                if (result == DialogResult.OK)
-                {
-                    updateViewExpenses();
-                    MessageBox.Show("Расход успешно обновлен");
-                }
+                MessageBox.Show($"Ошибка при редактировании расхода: {ex.Message}", "Ошибка",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -260,38 +240,27 @@ namespace Lab4
             }
         }
 
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e) { }
 
         private void HandleDeleteKey(object sender, KeyEventArgs e)
         {
-            try
+            if (e.KeyCode == Keys.Delete)
             {
-                if (e.KeyCode == Keys.Delete && !e.Handled)
+                if (tabPage3.Focused || tabPage3.ContainsFocus)
                 {
-                    if (DepartmentView.Focused && DepartmentView.SelectedItems.Count > 0)
-                    {
-                        deleteDepartment(sender, e);
-                    }
-                    else if (TypesExpensesView.Focused && TypesExpensesView.SelectedItems.Count > 0)
-                    {
-                        deleteTypesExpenses(sender, e);
-                    }
-                    else if (ExpensesView.Focused && ExpensesView.SelectedItems.Count > 0)
-                    {
-                        deleteExpenses(sender, e);
-                    }
-                    e.Handled = true;
+                    deleteExpenses(sender, e);
+                }
+                else if (DepartmentView.Focused)
+                {
+                    deleteDepartment(sender, e);
+                }
+                else if (TypesExpensesView.Focused)
+                {
+                    deleteTypesExpenses(sender, e);
                 }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Ошибка при обработке удаления: {ex.Message}", "Ошибка",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
         }
+
         private void deleteDepartment(object sender, EventArgs e)
         {
             try
@@ -392,56 +361,46 @@ namespace Lab4
         {
             try
             {
-                if (ExpensesView.SelectedItems.Count > 0)
+                List<LibraryElement> controlsToRemove = new List<LibraryElement>();
+                
+                foreach (Control control in tabPage3.Controls)
                 {
-                    ListViewItem selectedItem = ExpensesView.SelectedItems[0];
-                    int expensesId = int.Parse(selectedItem.Text);
-                    string expensesName = selectedItem.SubItems[1].Text;
+                    if (control is LibraryElement userControl && userControl.Selected)
+                    {
+                        controlsToRemove.Add(userControl);
+                    }
+                }
 
+                if (controlsToRemove.Count > 0)
+                {
                     DialogResult confirmResult = MessageBox.Show(
-                        $"Вы уверены, что хотите удалить трату '{expensesName}'?",
+                        $"Вы уверены, что хотите удалить выбранные расходы ({controlsToRemove.Count} шт.)?",
                         "Подтверждение удаления",
                         MessageBoxButtons.YesNo,
                         MessageBoxIcon.Warning);
 
                     if (confirmResult == DialogResult.Yes)
                     {
-                        var expenseToRemove = DepartmentBD.Instance.Expenses.FirstOrDefault(exp => exp.Id == expensesId);
-
-                        if (expenseToRemove != null)
+                        foreach (var userControl in controlsToRemove)
                         {
-                            DepartmentBD.Instance.Expenses.Remove(expenseToRemove);
-                            updateViewExpenses();
-                            MessageBox.Show($"Трата '{expensesName}' успешно удалена",
-                                "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            DepartmentBD.Instance.Expenses.Remove(userControl.Expense);
+                            tabPage3.Controls.Remove(userControl);
                         }
-                        else
-                        {
-                            MessageBox.Show("Не удалось найти трату для удаления",
-                                "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        }
+                        
+                        MessageBox.Show($"Удалено {controlsToRemove.Count} расходов",
+                            "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Пожалуйста, выберите трату для удаления");
+                    MessageBox.Show("Пожалуйста, выберите расходы для удаления");
                 }
-            }
-            catch (FormatException ex)
-            {
-                MessageBox.Show($"Ошибка формата ID: {ex.Message}", "Ошибка формата",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            catch (InvalidOperationException ex)
-            {
-                MessageBox.Show($"Ошибка поиска траты: {ex.Message}", "Ошибка поиска",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Ошибка при удалении траты: {ex.Message}", "Ошибка",
+                MessageBox.Show($"Ошибка при удалении расходов: {ex.Message}", "Ошибка",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
-    }
+}

@@ -9,7 +9,7 @@
       "Lab4/1.0.0": {
         "dependencies": {
           "ClassLibrary1": "1.0.0",
-          "WindowsFormsControlLibrary1": "1.0.0"
+          "WinFormsControlLibrary2": "1.0.0"
         },
         "runtime": {
           "Lab4.dll": {}
@@ -23,9 +23,12 @@
           }
         }
       },
-      "WindowsFormsControlLibrary1/1.0.0": {
+      "WinFormsControlLibrary2/1.0.0": {
+        "dependencies": {
+          "ClassLibrary1": "1.0.0"
+        },
         "runtime": {
-          "WindowsFormsControlLibrary1.dll": {
+          "WinFormsControlLibrary2.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -44,7 +47,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "WindowsFormsControlLibrary1/1.0.0": {
+    "WinFormsControlLibrary2/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

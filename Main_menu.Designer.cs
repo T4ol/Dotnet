@@ -54,17 +54,10 @@
             columnHeader6 = new ColumnHeader();
             columnHeader7 = new ColumnHeader();
             tabPage3 = new TabPage();
-            ExpensesView = new ListView();
-            columnHeader8 = new ColumnHeader();
-            columnHeader9 = new ColumnHeader();
-            columnHeader10 = new ColumnHeader();
-            columnHeader11 = new ColumnHeader();
-            columnHeader12 = new ColumnHeader();
             menuStrip1.SuspendLayout();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             tabPage2.SuspendLayout();
-            tabPage3.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
@@ -118,21 +111,21 @@
             // createToolStripMenuItem1
             // 
             createToolStripMenuItem1.Name = "createToolStripMenuItem1";
-            createToolStripMenuItem1.Size = new Size(180, 22);
+            createToolStripMenuItem1.Size = new Size(111, 22);
             createToolStripMenuItem1.Text = "Create";
             createToolStripMenuItem1.Click += createToolStripMenuItem1_Click;
             // 
             // reductToolStripMenuItem1
             // 
             reductToolStripMenuItem1.Name = "reductToolStripMenuItem1";
-            reductToolStripMenuItem1.Size = new Size(180, 22);
+            reductToolStripMenuItem1.Size = new Size(111, 22);
             reductToolStripMenuItem1.Text = "Reduct";
             reductToolStripMenuItem1.Click += reductToolStripMenuItem1_Click;
             // 
             // deleteToolStripMenuItem1
             // 
             deleteToolStripMenuItem1.Name = "deleteToolStripMenuItem1";
-            deleteToolStripMenuItem1.Size = new Size(180, 22);
+            deleteToolStripMenuItem1.Size = new Size(111, 22);
             deleteToolStripMenuItem1.Text = "Delete";
             deleteToolStripMenuItem1.Click += deleteTypesExpenses;
             // 
@@ -147,21 +140,21 @@
             // addToolStripMenuItem
             // 
             addToolStripMenuItem.Name = "addToolStripMenuItem";
-            addToolStripMenuItem.Size = new Size(180, 22);
+            addToolStripMenuItem.Size = new Size(111, 22);
             addToolStripMenuItem.Text = "Create";
             addToolStripMenuItem.Click += addToolStripMenuItem_Click;
             // 
             // reductToolStripMenuItem2
             // 
             reductToolStripMenuItem2.Name = "reductToolStripMenuItem2";
-            reductToolStripMenuItem2.Size = new Size(180, 22);
+            reductToolStripMenuItem2.Size = new Size(111, 22);
             reductToolStripMenuItem2.Text = "Reduct";
             reductToolStripMenuItem2.Click += reductToolStripMenuItem2_Click;
             // 
             // deleteToolStripMenuItem2
             // 
             deleteToolStripMenuItem2.Name = "deleteToolStripMenuItem2";
-            deleteToolStripMenuItem2.Size = new Size(180, 22);
+            deleteToolStripMenuItem2.Size = new Size(111, 22);
             deleteToolStripMenuItem2.Text = "Delete";
             deleteToolStripMenuItem2.Click += deleteExpenses;
             // 
@@ -257,7 +250,6 @@
             // 
             // tabPage3
             // 
-            tabPage3.Controls.Add(ExpensesView);
             tabPage3.Location = new Point(4, 24);
             tabPage3.Name = "tabPage3";
             tabPage3.Padding = new Padding(3);
@@ -265,41 +257,6 @@
             tabPage3.TabIndex = 2;
             tabPage3.Text = "Expenses";
             tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // ExpensesView
-            // 
-            ExpensesView.Columns.AddRange(new ColumnHeader[] { columnHeader8, columnHeader9, columnHeader10, columnHeader11, columnHeader12 });
-            ExpensesView.Dock = DockStyle.Fill;
-            ExpensesView.Location = new Point(3, 3);
-            ExpensesView.Name = "ExpensesView";
-            ExpensesView.Size = new Size(786, 392);
-            ExpensesView.TabIndex = 0;
-            ExpensesView.UseCompatibleStateImageBehavior = false;
-            ExpensesView.View = View.Details;
-            // 
-            // columnHeader8
-            // 
-            columnHeader8.Text = "Id";
-            // 
-            // columnHeader9
-            // 
-            columnHeader9.Text = "Department";
-            columnHeader9.Width = 120;
-            // 
-            // columnHeader10
-            // 
-            columnHeader10.Text = "NameExpenses";
-            columnHeader10.Width = 200;
-            // 
-            // columnHeader11
-            // 
-            columnHeader11.Text = "SumExpenses";
-            columnHeader11.Width = 120;
-            // 
-            // columnHeader12
-            // 
-            columnHeader12.Text = "Date";
-            columnHeader12.Width = 100;
             // 
             // Main_menu
             // 
@@ -317,7 +274,6 @@
             tabControl1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
             tabPage2.ResumeLayout(false);
-            tabPage3.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -339,7 +295,6 @@
         private ListView DepartmentView;
         private ListView TypesExpensesView;
         private TabPage tabPage3;
-        private ListView ExpensesView;
         private ColumnHeader columnHeader1;
         private ColumnHeader columnHeader2;
         private ColumnHeader columnHeader3;
@@ -347,11 +302,6 @@
         private ColumnHeader columnHeader5;
         private ColumnHeader columnHeader6;
         private ColumnHeader columnHeader7;
-        private ColumnHeader columnHeader8;
-        private ColumnHeader columnHeader9;
-        private ColumnHeader columnHeader10;
-        private ColumnHeader columnHeader11;
-        private ColumnHeader columnHeader12;
         private ToolStripMenuItem deleteToolStripMenuItem;
         private ToolStripMenuItem deleteToolStripMenuItem1;
         private ToolStripMenuItem deleteToolStripMenuItem2;

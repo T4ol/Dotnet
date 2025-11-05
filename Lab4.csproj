@@ -10,7 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ClassLibrary1\ClassLibrary1\ClassLibrary1.csproj" />
-    <ProjectReference Include="..\WindowsFormsControlLibrary1\WindowsFormsControlLibrary1\WindowsFormsControlLibrary1.csproj" />
+    <ProjectReference Include="..\WinFormsControlLibrary2\WinFormsControlLibrary2.csproj" />
   </ItemGroup>
 
   <ItemGroup>

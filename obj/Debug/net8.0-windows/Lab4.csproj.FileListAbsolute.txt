@@ -1,0 +1,73 @@
+C:\Users\Кирюхин Константин\source\repos\Lab4\bin\Debug\net8.0-windows\Lab4.exe
+C:\Users\Кирюхин Константин\source\repos\Lab4\bin\Debug\net8.0-windows\Lab4.deps.json
+C:\Users\Кирюхин Константин\source\repos\Lab4\bin\Debug\net8.0-windows\Lab4.runtimeconfig.json
+C:\Users\Кирюхин Константин\source\repos\Lab4\bin\Debug\net8.0-windows\Lab4.dll
+C:\Users\Кирюхин Константин\source\repos\Lab4\bin\Debug\net8.0-windows\Lab4.pdb
+C:\Users\Кирюхин Константин\source\repos\Lab4\obj\Debug\net8.0-windows\Lab4.csproj.GenerateResource.cache
+C:\Users\Кирюхин Константин\source\repos\Lab4\obj\Debug\net8.0-windows\Lab4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Кирюхин Константин\source\repos\Lab4\obj\Debug\net8.0-windows\Lab4.AssemblyInfoInputs.cache
+C:\Users\Кирюхин Константин\source\repos\Lab4\obj\Debug\net8.0-windows\Lab4.AssemblyInfo.cs
+C:\Users\Кирюхин Константин\source\repos\Lab4\obj\Debug\net8.0-windows\Lab4.csproj.CoreCompileInputs.cache
+C:\Users\Кирюхин Константин\source\repos\Lab4\obj\Debug\net8.0-windows\Lab4.dll
+C:\Users\Кирюхин Константин\source\repos\Lab4\obj\Debug\net8.0-windows\refint\Lab4.dll
+C:\Users\Кирюхин Константин\source\repos\Lab4\obj\Debug\net8.0-windows\Lab4.pdb
+C:\Users\Кирюхин Константин\source\repos\Lab4\obj\Debug\net8.0-windows\Lab4.genruntimeconfig.cache
+C:\Users\Кирюхин Константин\source\repos\Lab4\obj\Debug\net8.0-windows\ref\Lab4.dll
+C:\Users\Кирюхин Константин\source\repos\Lab4\obj\Debug\net8.0-windows\Lab4.csproj.AssemblyReference.cache
+C:\Users\Кирюхин Константин\source\repos\Lab4\obj\Debug\net8.0-windows\Lab4.Main_menu.resources
+C:\Users\Кирюхин Константин\source\repos\Lab4\bin\Debug\net8.0-windows\ClassLibrary1.dll
+C:\Users\Кирюхин Константин\source\repos\Lab4\bin\Debug\net8.0-windows\ClassLibrary1.pdb
+C:\Users\Кирюхин Константин\source\repos\Lab4\obj\Debug\net8.0-windows\Lab4.csproj.Up2Date
+C:\Users\Кирюхин Константин\source\repos\Lab4\obj\Debug\net8.0-windows\Lab4.DepartmentCreate.resources
+C:\Users\Кирюхин Константин\source\repos\Lab4\obj\Debug\net8.0-windows\Lab4.TypesExpensesCreate.resources
+C:\Users\Кирюхин Константин\source\repos\Lab4\obj\Debug\net8.0-windows\Lab4.ExpensesCreate.resources
+C:\Users\Kosty\Desktop\надо\Lab4\bin\Debug\net8.0-windows\Lab4.exe
+C:\Users\Kosty\Desktop\надо\Lab4\bin\Debug\net8.0-windows\Lab4.deps.json
+C:\Users\Kosty\Desktop\надо\Lab4\bin\Debug\net8.0-windows\Lab4.runtimeconfig.json
+C:\Users\Kosty\Desktop\надо\Lab4\bin\Debug\net8.0-windows\Lab4.dll
+C:\Users\Kosty\Desktop\надо\Lab4\bin\Debug\net8.0-windows\Lab4.pdb
+C:\Users\Kosty\Desktop\надо\Lab4\bin\Debug\net8.0-windows\ClassLibrary1.dll
+C:\Users\Kosty\Desktop\надо\Lab4\bin\Debug\net8.0-windows\ClassLibrary1.pdb
+C:\Users\Kosty\Desktop\надо\Lab4\obj\Debug\net8.0-windows\Lab4.csproj.AssemblyReference.cache
+C:\Users\Kosty\Desktop\надо\Lab4\obj\Debug\net8.0-windows\Lab4.DepartmentCreate.resources
+C:\Users\Kosty\Desktop\надо\Lab4\obj\Debug\net8.0-windows\Lab4.ExpensesCreate.resources
+C:\Users\Kosty\Desktop\надо\Lab4\obj\Debug\net8.0-windows\Lab4.Main_menu.resources
+C:\Users\Kosty\Desktop\надо\Lab4\obj\Debug\net8.0-windows\Lab4.TypesExpensesCreate.resources
+C:\Users\Kosty\Desktop\надо\Lab4\obj\Debug\net8.0-windows\Lab4.csproj.GenerateResource.cache
+C:\Users\Kosty\Desktop\надо\Lab4\obj\Debug\net8.0-windows\Lab4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kosty\Desktop\надо\Lab4\obj\Debug\net8.0-windows\Lab4.AssemblyInfoInputs.cache
+C:\Users\Kosty\Desktop\надо\Lab4\obj\Debug\net8.0-windows\Lab4.AssemblyInfo.cs
+C:\Users\Kosty\Desktop\надо\Lab4\obj\Debug\net8.0-windows\Lab4.csproj.CoreCompileInputs.cache
+C:\Users\Kosty\Desktop\надо\Lab4\obj\Debug\net8.0-windows\Lab4.csproj.Up2Date
+C:\Users\Kosty\Desktop\надо\Lab4\obj\Debug\net8.0-windows\Lab4.dll
+C:\Users\Kosty\Desktop\надо\Lab4\obj\Debug\net8.0-windows\refint\Lab4.dll
+C:\Users\Kosty\Desktop\надо\Lab4\obj\Debug\net8.0-windows\Lab4.pdb
+C:\Users\Kosty\Desktop\надо\Lab4\obj\Debug\net8.0-windows\Lab4.genruntimeconfig.cache
+C:\Users\Kosty\Desktop\надо\Lab4\obj\Debug\net8.0-windows\ref\Lab4.dll
+C:\Users\Konstantin\source\repos\Lab4\obj\Debug\net8.0-windows\Lab4.csproj.AssemblyReference.cache
+C:\Users\Konstantin\source\repos\Lab4\obj\Debug\net8.0-windows\Lab4.DepartmentCreate.resources
+C:\Users\Konstantin\source\repos\Lab4\obj\Debug\net8.0-windows\Lab4.ExpensesCreate.resources
+C:\Users\Konstantin\source\repos\Lab4\obj\Debug\net8.0-windows\Lab4.Main_menu.resources
+C:\Users\Konstantin\source\repos\Lab4\obj\Debug\net8.0-windows\Lab4.Properties.Resources.resources
+C:\Users\Konstantin\source\repos\Lab4\obj\Debug\net8.0-windows\Lab4.TypesExpensesCreate.resources
+C:\Users\Konstantin\source\repos\Lab4\obj\Debug\net8.0-windows\Lab4.csproj.GenerateResource.cache
+C:\Users\Konstantin\source\repos\Lab4\obj\Debug\net8.0-windows\Lab4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Konstantin\source\repos\Lab4\obj\Debug\net8.0-windows\Lab4.AssemblyInfoInputs.cache
+C:\Users\Konstantin\source\repos\Lab4\obj\Debug\net8.0-windows\Lab4.AssemblyInfo.cs
+C:\Users\Konstantin\source\repos\Lab4\obj\Debug\net8.0-windows\Lab4.csproj.CoreCompileInputs.cache
+C:\Users\Konstantin\source\repos\Lab4\obj\Debug\net8.0-windows\Lab4.dll
+C:\Users\Konstantin\source\repos\Lab4\obj\Debug\net8.0-windows\refint\Lab4.dll
+C:\Users\Konstantin\source\repos\Lab4\obj\Debug\net8.0-windows\Lab4.pdb
+C:\Users\Konstantin\source\repos\Lab4\bin\Debug\net8.0-windows\Lab4.exe
+C:\Users\Konstantin\source\repos\Lab4\bin\Debug\net8.0-windows\Lab4.deps.json
+C:\Users\Konstantin\source\repos\Lab4\bin\Debug\net8.0-windows\Lab4.runtimeconfig.json
+C:\Users\Konstantin\source\repos\Lab4\bin\Debug\net8.0-windows\Lab4.dll
+C:\Users\Konstantin\source\repos\Lab4\bin\Debug\net8.0-windows\Lab4.pdb
+C:\Users\Konstantin\source\repos\Lab4\bin\Debug\net8.0-windows\ClassLibrary1.dll
+C:\Users\Konstantin\source\repos\Lab4\bin\Debug\net8.0-windows\WindowsFormsControlLibrary1.dll
+C:\Users\Konstantin\source\repos\Lab4\bin\Debug\net8.0-windows\ClassLibrary1.pdb
+C:\Users\Konstantin\source\repos\Lab4\bin\Debug\net8.0-windows\WindowsFormsControlLibrary1.pdb
+C:\Users\Konstantin\source\repos\Lab4\obj\Debug\net8.0-windows\Lab4.csproj.Up2Date
+C:\Users\Konstantin\source\repos\Lab4\obj\Debug\net8.0-windows\Lab4.genruntimeconfig.cache
+C:\Users\Konstantin\source\repos\Lab4\obj\Debug\net8.0-windows\ref\Lab4.dll
+C:\Users\Konstantin\source\repos\Lab4\obj\Debug\net8.0-windows\Lab4.sourcelink.json

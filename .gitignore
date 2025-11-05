@@ -1,0 +1,9 @@
+.vs/
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sln
+*.suo
+*.sdf
+*.opensdf
+*.db
